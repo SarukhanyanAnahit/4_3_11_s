@@ -1,13 +1,11 @@
 from selenium.common.exceptions import NoAlertPresentException
 import math
 from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.by import By
 from .locators import BasePageLocators
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from .locators import ProductPageLocators
-# from .login_page import LoginPage
 
 class BasePage():
     def __init__(self, browser, url):
